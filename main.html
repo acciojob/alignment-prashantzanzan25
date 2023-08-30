@@ -3,10 +3,83 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <title>HTML Assignment 3</title>
+  <style>
+    .middle {
+      border: 1px solid black;
+      border-spacing: 1px;
+      padding: 1px;
+    }
+    .center {
+      text-align: center;
+    }
+    .right {
+      text-align: right;
+    }
+    .green {
+      background-color: green;
+    }
+    .blue {
+      background-color: blue;
+    }
+  </style>
+	
 </head>
 
 <body>
+	<h1 style="text-align: center;">HTML Assignment #3</h1>
+
+  <table class="middle" id="table-1">
+    <tr>
+      <td id="t11">Row 1, Column 1</td>
+      <td id="t12">Row 1, Column 2</td>
+      <td class="center right" id="t13">Row 1, Column 3</td>
+    </tr>
+    <tr>
+      <td id="t21">Row 2, Column 1</td>
+      <td>Row 2, Column 2</td>
+      <td class="center right">Row 2, Column 3</td>
+    </tr>
+    <tr>
+      <td>Row 3, Column 1</td>
+      <td>Row 3, Column 2</td>
+      <td class="center right">Row 3, Column 3</td>
+    </tr>
+  </table>
+
+  <table class="middle" id="table-2">
+    <tr>
+      <td colspan="6" class="center" id="t21">This cell spans 6 columns</td>
+    </tr>
+    <tr>
+      <td>Row 2, Column 1</td>
+      <td>Row 2, Column 2</td>
+      <td>Row 2, Column 3</td>
+      <td>Row 2, Column 4</td>
+      <td>Row 2, Column 5</td>
+      <td>Row 2, Column 6</td>
+    </tr>
+    <!-- ... Repeat rows 3 to 6 similarly ... -->
+  </table>
+
+  <table class="middle green blue" id="table-3">
+    <tr class="green">
+      <td>Green Row 1, Column 1</td>
+      <td>Green Row 1, Column 2</td>
+      <td>Green Row 1, Column 3</td>
+    </tr>
+    <tr>
+      <td colspan="3" class="center" id="t-image">
+        <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="image">
+      </td>
+    </tr>
+    <tr class="blue">
+      <td>Blue Row 3, Column 1</td>
+      <td>Blue Row 3, Column 2</td>
+      <td>Blue Row 3, Column 3</td>
+    </tr>
+  </table>
+	
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
